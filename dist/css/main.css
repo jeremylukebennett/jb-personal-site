@@ -1,0 +1,82 @@
+body {
+  background-color: #292929;
+  color: #E0454A;
+  font-family: "Mada", sans-serif;
+  font-weight: 200; }
+
+header {
+  display: flex;
+  justify-content: space-between; }
+
+.menu-item {
+  display: inline; }
+
+#header-name {
+  font-weight: 200;
+  display: inline; }
+
+ul#nav-bar-menu {
+  list-style-type: none;
+  padding: 0.6em 0 0 0;
+  display: inline; }
+  ul#nav-bar-menu a {
+    text-decoration: none; }
+  ul#nav-bar-menu a:visited {
+    color: #E0454A;
+    text-decoration: none; }
+
+#greeting {
+  /* border: solid; */
+  height: 5em; }
+
+#greeting-text {
+  color: white;
+  font-size: 3em;
+  position: relative;
+  top: 2em;
+  left: 0.5em; }
+
+#about {
+  margin: 33em -1.5em 0 -1.5em;
+  background-color: #E0454A;
+  color: black;
+  height: 44em;
+  display: flex;
+  justify-content: space-evenly; }
+  #about section {
+    width: 17em;
+    align-self: center;
+    font-size: 1.6em; }
+  #about img {
+    align-self: center; }
+
+#projects {
+  background-color: white;
+  margin: 0 -1.5em 0 -1.5em;
+  height: 66em;
+  display: flex;
+  flex-direction: column;
+  /* align-items: start; */
+  justify-content: space-evenly; }
+  #projects h2 {
+    color: black;
+    font-weight: 200;
+    font-size: 3em;
+    padding: 0em 0em 0 1em; }
+
+#project-sit, #project-unknown {
+  display: flex;
+  justify-content: space-evenly; }
+  #project-sit section, #project-unknown section {
+    color: black;
+    align-self: center;
+    width: 18em; }
+    #project-sit section h3, #project-unknown section h3 {
+      font-size: 2.2em;
+      font-weight: 200; }
+    #project-sit section p, #project-unknown section p {
+      font-size: 1.5em; }
+  #project-sit img, #project-unknown img {
+    align-self: center; }
+
+/*# sourceMappingURL=main.css.map */
