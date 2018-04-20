@@ -33,29 +33,98 @@ ul#nav-bar-menu {
     list-style-type: none;
     padding: 0.6em 0 0 0;
     display: inline;
+
+
+    a {
+        text-decoration: none;
+    }
+    a:visited {
+    color: #E0454A;
+    text-decoration: none;
+    }
 }
 
 #greeting {
+
+    /* border: solid; */
+    height: 5em;
+}
+
+#greeting-text {    
     color: white;
     font-size: 3em;
+    position: relative;
+    top: 2em;
+    left: 0.5em;
 }
 
 #about {
-    margin: 14em -0.5em 0 -0.5em;
+    margin: 33em -1.5em 0 -1.5em;
     background-color: #E0454A;
     color: black;
-    padding: 0 0 0 0;
-    height: 20em;
+    // padding: 4em 0 0 0;
+    height: 44em;
     display: flex;
+    justify-content: space-evenly;
 
     section {    
-        border: solid black 3px;
         width: 17em;
-        // margin: 0em 0em 0em 7em;
         align-self: center;
+        font-size: 1.6em;
+        
     }
 
     img {
         align-self: center;
     }
 }
+
+#projects {    
+    background-color: white;
+    margin: 0 -1.5em 0 -1.5em;
+    height: 66em;
+    display: flex;
+    flex-direction: column;
+    /* align-items: start; */
+    justify-content: space-evenly;
+    
+
+    h2 {
+        color: black;
+        font-weight: 200;
+        font-size: 3em;
+        padding: 0em 0em 0 1em;
+    }
+
+}
+
+#project-sit, #project-unknown {
+    
+    display: flex;
+    justify-content: space-evenly;
+
+    // padding: 6em 0 0em 0;
+
+    section {
+        color: black;
+        align-self: center;
+        // border: solid;
+        width: 18em;
+
+        h3 {
+            font-size: 2.2em;
+            font-weight: 200;
+        }
+
+        p {
+            font-size: 1.5em;
+        }
+
+    }
+
+    img {
+        align-self: center;
+
+    }
+}
+
