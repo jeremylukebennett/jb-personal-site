@@ -2,6 +2,7 @@
 
 console.log("testing js");
 require('./scrollLinks');
+require('./scrollingNav');
 let $ = require('jquery');
 
 // $("section").hide();

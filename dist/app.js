@@ -3,6 +3,7 @@
 
 console.log("testing js");
 require('./scrollLinks');
+require('./scrollingNav');
 let $ = require('jquery');
 
 // $("section").hide();
@@ -42,7 +43,7 @@ let $ = require('jquery');
 //       }
 //     }
 //   });
-},{"./scrollLinks":2,"jquery":3}],2:[function(require,module,exports){
+},{"./scrollLinks":2,"./scrollingNav":3,"jquery":4}],2:[function(require,module,exports){
 "use strict";
 
 let $ = require('jquery');
@@ -85,7 +86,38 @@ $('a[href*="#"]')
   });
 
 //   module.exports = {}
-},{"jquery":3}],3:[function(require,module,exports){
+},{"jquery":4}],3:[function(require,module,exports){
+(function($) {
+    "use strict"; // Start of use strict
+  
+    // Smooth scrolling using jQuery easing
+    $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: (target.offset().top - 54)
+          }, 1000, "easeInOutExpo");
+          return false;
+        }
+      }
+    });
+  
+    // Closes responsive menu when a scroll trigger link is clicked
+    $('.js-scroll-trigger').click(function() {
+      $('.navbar-collapse').collapse('hide');
+    });
+  
+    // Activate scrollspy to add active class to navbar items on scroll
+    $('body').scrollspy({
+      target: '#mainNav',
+      offset: 54
+    });
+  
+  })(jQuery); // End of use strict
+  
+},{}],4:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v3.3.1
  * https://jquery.com/
