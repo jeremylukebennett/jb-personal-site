@@ -18,13 +18,34 @@ body {
     font-family: "Mada", sans-serif !important;
     font-weight: 200 !important;
     background-color: #292929 !important;
-
+    
 }
 
 header {
     color: #E0454A !important;
     margin: 0;
     padding: 2em 0 0 0;
+}
+
+nav#mainNav {
+    
+    background-color: #292929 !important;
+    color: #E0454A !important;
+
+    #name-title {
+        font-size: 2em;
+
+    }
+
+    a {
+        text-decoration: none;
+        color: #E0454A;
+    }
+
+    a:visited {
+    color: #E0454A;
+    text-decoration: none;
+    }
 }
 
 
@@ -137,3 +158,34 @@ ul#nav-bar-menu {
     }
 }
 
+
+
+
+
+/*!
+ * Start Bootstrap - Scrolling Nav (https://startbootstrap.com/template-overviews/scrolling-nav)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
+ */
+
+//  header {
+//     padding: 154px 0 100px;
+//   }
+  
+  @media (min-width: 992px) {
+    header {
+      padding: 156px 0 100px;
+    }
+  }
+  
+
+  nav#mainNav {
+
+
+
+}
+
+//   section {
+//     padding: 150px 0;
+//   }
+  

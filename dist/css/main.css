@@ -12,6 +12,18 @@ header {
   margin: 0;
   padding: 2em 0 0 0; }
 
+nav#mainNav {
+  background-color: #292929 !important;
+  color: #E0454A !important; }
+  nav#mainNav #name-title {
+    font-size: 2em; }
+  nav#mainNav a {
+    text-decoration: none;
+    color: #E0454A; }
+  nav#mainNav a:visited {
+    color: #E0454A;
+    text-decoration: none; }
+
 .menu-item {
   display: inline; }
 
@@ -75,5 +87,14 @@ ul#nav-bar-menu {
       font-size: 1.5em; }
   #project-sit img, #project-unknown img {
     align-self: center; }
+
+/*!
+ * Start Bootstrap - Scrolling Nav (https://startbootstrap.com/template-overviews/scrolling-nav)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
+ */
+@media (min-width: 992px) {
+  header {
+    padding: 156px 0 100px; } }
 
 /*# sourceMappingURL=main.css.map */
