@@ -103,6 +103,14 @@ ul#nav-bar-menu {
     color: black;
     height: 58em;
 
+    h2 {
+        font-family: $font-stack;
+        font-weight: 200;
+        font-size: 3em;
+        padding-top: 2em;
+
+    }
+
     section {    
         width: 19em;
         padding: 8em 0 0 0;
@@ -127,10 +135,13 @@ ul#nav-bar-menu {
     flex-direction: column;
     justify-content: space-evenly;
 
-    // h2 {
-    //     @extend %section-header-title;
-    // }
-
+    h2 {
+        // @extend %section-header-title;
+        font-family: $font-stack;
+        font-weight: 200;
+        font-size: 3em;
+        padding-left: 1em;
+    }
 }
 
 #project-sit, #project-unknown {
@@ -156,6 +167,58 @@ ul#nav-bar-menu {
     img {
         align-self: center;
     }
+}
+
+
+
+
+// Blog Section Styles
+
+
+#blog {
+
+    background-color: #E0454A;
+    color: black;
+    height: 60em;
+
+
+    p {
+
+        font-size: 3em;
+        text-align: center;
+        padding-top: 9em;
+        
+    }
+
+}
+
+// Contact Section Styles
+
+#contact {
+    height: 16.7em;
+    color: white;
+    font-size: 3em;
+    font-weight: 200;
+    text-align: center;
+
+    
+    ul {
+        
+        display: inline-flex;
+        list-style-type: none;
+        
+        li {
+            padding: 1em;
+        }
+    }
+    
+    img {
+        width: 2em;
+    }
+}
+
+p#prompt {
+    margin-top: 5em;
 }
 
 

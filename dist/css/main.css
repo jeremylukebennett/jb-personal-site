@@ -58,6 +58,11 @@ ul#nav-bar-menu {
   background-color: #E0454A;
   color: black;
   height: 58em; }
+  #about h2 {
+    font-family: "Mada", sans-serif;
+    font-weight: 200;
+    font-size: 3em;
+    padding-top: 2em; }
   #about section {
     width: 19em;
     padding: 8em 0 0 0;
@@ -72,6 +77,11 @@ ul#nav-bar-menu {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly; }
+  #projects h2 {
+    font-family: "Mada", sans-serif;
+    font-weight: 200;
+    font-size: 3em;
+    padding-left: 1em; }
 
 #project-sit, #project-unknown {
   display: flex;
@@ -87,6 +97,32 @@ ul#nav-bar-menu {
       font-size: 1.5em; }
   #project-sit img, #project-unknown img {
     align-self: center; }
+
+#blog {
+  background-color: #E0454A;
+  color: black;
+  height: 60em; }
+  #blog p {
+    font-size: 3em;
+    text-align: center;
+    padding-top: 9em; }
+
+#contact {
+  height: 16.7em;
+  color: white;
+  font-size: 3em;
+  font-weight: 200;
+  text-align: center; }
+  #contact ul {
+    display: inline-flex;
+    list-style-type: none; }
+    #contact ul li {
+      padding: 1em; }
+  #contact img {
+    width: 2em; }
+
+p#prompt {
+  margin-top: 5em; }
 
 /*!
  * Start Bootstrap - Scrolling Nav (https://startbootstrap.com/template-overviews/scrolling-nav)
