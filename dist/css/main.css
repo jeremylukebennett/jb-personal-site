@@ -20,6 +20,10 @@ nav#mainNav {
   nav#mainNav a {
     text-decoration: none;
     color: #E0454A; }
+  nav#mainNav a:hover {
+    text-decoration: none;
+    color: #ffb6b9;
+    transition-duration: 0.2s; }
   nav#mainNav a:visited {
     color: #E0454A;
     text-decoration: none; }
@@ -108,7 +112,7 @@ ul#nav-bar-menu {
     padding-top: 9em; }
 
 #contact {
-  height: 16.7em;
+  height: 15.3em;
   color: white;
   font-size: 3em;
   font-weight: 200;
@@ -129,8 +133,20 @@ p#prompt {
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
  */
-@media (min-width: 992px) {
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and below) */
+@media only screen and (max-width: 768px) {
+  #greeting-text {
+    color: white;
+    font-size: 4em;
+    margin-top: -0.1em;
+    padding: 4em 0 0 1em;
+    width: 10em; } }
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
   header {
     padding: 156px 0 100px; } }
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 
 /*# sourceMappingURL=main.css.map */
