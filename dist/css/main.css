@@ -56,7 +56,7 @@ ul#nav-bar-menu {
   color: white;
   font-size: 4em;
   margin-top: -0.1em;
-  padding: 4em 0 0 1em; }
+  padding: 4em 0 0 0em; }
 
 #about {
   background-color: #E0454A;
@@ -119,7 +119,8 @@ ul#nav-bar-menu {
   text-align: center; }
   #contact ul {
     display: inline-flex;
-    list-style-type: none; }
+    list-style-type: none;
+    flex-wrap: wrap; }
     #contact ul li {
       padding: 1em; }
   #contact img {
@@ -133,8 +134,39 @@ p#prompt {
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
  */
-/* Extra small devices (phones, 600px and down) */
+/* Extra small devices (phones, 375px and down) */
+/* Extra small devices (phones, 425px and down) */
+@media only screen and (max-width: 425px) {
+  #greeting {
+    height: 29em; }
+
+  #greeting-text {
+    font-size: 2em !important;
+    padding: 4em 0 0 0.5em !important;
+    height: 37em; }
+
+  #about {
+    height: 50em; }
+    #about section {
+      font-size: 1.2em !important;
+      padding: 0 0;
+      margin: auto; }
+    #about img {
+      padding: 0em;
+      margin-left: 25%;
+      margin-top: 4em; }
+
+  #contact img {
+    width: 1.5em; } }
 /* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and below) */
+@media only screen and (max-width: 768px) {
+  #greeting-text {
+    color: white;
+    font-size: 4em;
+    margin-top: -0.1em;
+    padding: 4em 0 0 1em;
+    width: 10em; } }
 /* Medium devices (landscape tablets, 768px and below) */
 @media only screen and (max-width: 768px) {
   #greeting-text {

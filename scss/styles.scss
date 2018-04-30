@@ -99,7 +99,7 @@ ul#nav-bar-menu {
     color: white;
     font-size: 4em;
     margin-top: -0.1em;
-    padding: 4em 0 0 1em;
+    padding: 4em 0 0 0em;
 }
 
 
@@ -213,6 +213,7 @@ ul#nav-bar-menu {
         
         display: inline-flex;
         list-style-type: none;
+        flex-wrap: wrap;
         
         li {
             padding: 1em;
@@ -251,9 +252,72 @@ p#prompt {
 
 
 //  Breakpoints
-  /* Extra small devices (phones, 600px and down) */
+  /* Extra small devices (phones, 375px and down) */
+@media only screen and (max-width: 375px) {
+    // settings go here
+
+    
+} 
+
+/* Extra small devices (phones, 425px and down) */
+@media only screen and (max-width: 425px) {
+    // settings go here
+    
+    #greeting {
+        height: 29em;
+    }
+
+    #greeting-text {
+        font-size: 2em !important;
+        padding: 4em 0 0 0.5em !important;
+        height: 37em;
+        // border: solid black 2px;
+    }
+
+    #about {
+        height: 50em;   
+
+
+
+        section{
+            font-size: 1.2em !important;
+            // border: solid black 2px;
+            padding: 0 0;
+            margin: auto;
+        }
+        
+        img{
+            padding: 0em;
+            margin-left: 25%;
+            margin-top: 4em;
+        }
+
+
+    }
+
+    // #about section{
+    //     font-size: 1.2em !important;
+    //     // border: solid black 2px;
+    //     padding: 0 0;
+    //     margin: auto;
+    // }
+
+    // #about img{
+    //     padding: 0em;
+    //     margin-left: 25%;
+    //     margin-top: 4em;
+    // }
+
+
+    #contact img {
+        width: 1.5em;
+    }
+
+} 
+
 @media only screen and (max-width: 600px) {
     // settings go here
+    
 
 } 
 
@@ -262,6 +326,18 @@ p#prompt {
     // settings go here
 } 
 
+/* Medium devices (landscape tablets, 768px and below) */
+@media only screen and (max-width: 768px) {
+    // settings go here
+    #greeting-text {
+        color: white;
+        font-size: 4em;
+        margin-top: -0.1em;
+        padding: 4em 0 0 1em;
+        width: 10em;
+    }
+
+} 
 /* Medium devices (landscape tablets, 768px and below) */
 @media only screen and (max-width: 768px) {
     // settings go here
