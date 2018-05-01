@@ -73,7 +73,8 @@ ul#nav-bar-menu {
     font-size: 1.6em;
     margin-bottom: -11em; }
   #about img {
-    padding-top: 21em; }
+    padding-top: 21em;
+    padding-left: 2em; }
 
 #projects {
   background-color: white;
