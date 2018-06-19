@@ -61,19 +61,19 @@ ul#nav-bar-menu {
 #about {
   background-color: #E0454A;
   color: black;
-  height: 58em; }
+  height: 38em; }
   #about h2 {
     font-family: "Mada", sans-serif;
     font-weight: 200;
     font-size: 3em;
-    padding-top: 2em; }
+    padding-top: 1em; }
   #about section {
     width: 19em;
-    padding: 8em 0 0 0;
+    padding: 2em 0 0 0;
     font-size: 1.6em;
     margin-bottom: -11em; }
   #about img {
-    padding-top: 21em;
+    padding-top: 11em;
     padding-left: 2em; }
 
 #projects {
@@ -87,6 +87,15 @@ ul#nav-bar-menu {
     font-weight: 200;
     font-size: 3em;
     padding-left: 1em; }
+  #projects img {
+    display: inherit; }
+
+.modal-full {
+  min-width: 100%;
+  margin: 0; }
+
+.modal-full .modal-content {
+  min-height: 80vh; }
 
 #project-sit, #project-unknown {
   display: flex;
@@ -101,7 +110,18 @@ ul#nav-bar-menu {
     #project-sit section p, #project-unknown section p {
       font-size: 1.5em; }
   #project-sit img, #project-unknown img {
-    align-self: center; }
+    align-self: center;
+    box-shadow: -1px -1px 0px 0px #ccc; }
+
+#sit-case-study {
+  background-color: #CEE8FB; }
+
+#spin-screenshot {
+  width: 12.3em; }
+
+#spin-case-study {
+  background-color: #2F3855;
+  color: #02D4F5; }
 
 #blog {
   background-color: #E0454A;
@@ -148,13 +168,15 @@ p#prompt {
 
   #about {
     height: 50em; }
+    #about h2 {
+      padding-top: 1em; }
     #about section {
       font-size: 1.2em !important;
       padding: 0 0;
       margin: auto; }
     #about img {
       padding: 0em;
-      margin-left: 25%;
+      margin-left: 1em;
       margin-top: 4em; }
 
   #contact img {

@@ -86,8 +86,9 @@ ul#nav-bar-menu {
 }
 
 
-
-// Greeting Sections Styles
+// ***********************************************************
+// ******************GREETING SECTION STYLES******************
+// ***********************************************************
 
 #greeting {
     background-color: #292929 !important;
@@ -103,54 +104,91 @@ ul#nav-bar-menu {
 }
 
 
-
-// About Section Styles
+// ***********************************************************
+// ******************ABOUT SECTION STYLES*********************
+// ***********************************************************
 #about {
     background-color: #E0454A;
     color: black;
-    height: 58em;
+    height: 38em;
 
     h2 {
         font-family: $font-stack;
         font-weight: 200;
         font-size: 3em;
-        padding-top: 2em;
-
+        padding-top: 1em;
     }
 
     section {    
         width: 19em;
-        padding: 8em 0 0 0;
+        padding: 2em 0 0 0;
         font-size: 1.6em;
         margin-bottom: -11em;
     }
 
     img {
-        padding-top: 21em;
+        padding-top: 11em;
         padding-left: 2em;
     }
 }
 
 
 
-// Projects Section Styles
+
+
+// ***********************************************************
+// ******************PROJECT SECTION STYLES*******************
+// ***********************************************************
 
 #projects {    
     background-color: white;
-    // margin: 0 -1.5em 0 -1.5em;
     height: 66em;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 
     h2 {
-        // @extend %section-header-title;
         font-family: $font-stack;
         font-weight: 200;
         font-size: 3em;
         padding-left: 1em;
     }
+
+    img {
+        display: inherit;
+    } 
 }
+
+//     .modal-dialog {
+//         width: 100%;
+//         height: 100%;
+//         margin: 0;
+//         padding: 0;
+//     }
+  
+//   .modal-content {
+//     height: auto;
+//     min-height: 100%;
+//     border-radius: 0;
+//   }
+
+// .full-screen {
+//     width: 100%;
+//     height: 100%;
+//     margin: 0;
+//     top: 0;
+//     left: 0;
+// }
+
+.modal-full {
+    min-width: 100%;
+    margin: 0;
+}
+
+.modal-full .modal-content {
+    min-height: 80vh;
+}
+
 
 #project-sit, #project-unknown {
     
@@ -174,13 +212,27 @@ ul#nav-bar-menu {
 
     img {
         align-self: center;
+        box-shadow: -1px -1px 0px 0px #ccc;
     }
 }
 
+#sit-case-study {
+    background-color: #CEE8FB;
+}
+
+#spin-screenshot {
+    width: 12.3em;
+}
+
+#spin-case-study{
+    background-color: #2F3855;
+    color: #02D4F5;
+}
 
 
-
-// Blog Section Styles
+// ***********************************************************
+// ******************BLOG SECTION STYLES**********************
+// ***********************************************************
 
 
 #blog {
@@ -197,10 +249,11 @@ ul#nav-bar-menu {
         padding-top: 9em;
         
     }
-
 }
 
-// Contact Section Styles
+// ***********************************************************
+// ******************CONTACT SECTION STYLES*******************
+// ***********************************************************
 
 #contact {
     height: 15.3em;
@@ -260,6 +313,18 @@ p#prompt {
     
 } 
 
+
+// @media only screen and (min-width: 425px) {
+//     #about {
+//         height: 53em;
+
+//         img {
+//             padding-top: 19em;
+//             padding-left: 0em;
+//         }
+//     }
+// }
+
 /* Extra small devices (phones, 425px and down) */
 @media only screen and (max-width: 425px) {
     // settings go here
@@ -278,7 +343,9 @@ p#prompt {
     #about {
         height: 50em;   
 
-
+        h2 {
+            padding-top: 1em;
+        }
 
         section{
             font-size: 1.2em !important;
@@ -289,7 +356,7 @@ p#prompt {
         
         img{
             padding: 0em;
-            margin-left: 25%;
+            margin-left: 1em;            
             margin-top: 4em;
         }
 

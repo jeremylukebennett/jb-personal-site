@@ -12,7 +12,10 @@
 <body>
 
 
-    <!-- Navigation -->
+    <!-- ************************************************** -->
+    <!-- ****************** NAVIGATION ******************** -->
+    <!-- ************************************************** -->    
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
         <div class="container">
             <a class="navbar-brand js-scroll-trigger" href="#greeting" id="name-title">Jeremy Bennett</a>
@@ -22,16 +25,16 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                    <a class="nav-link js-scroll-trigger" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+                    <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#blog">Blog</a>
+                    <a class="nav-link js-scroll-trigger" href="#blog">Blog</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                    <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
                 </li>
             </ul>
             </div>
@@ -39,10 +42,6 @@
     </nav>
 
 
-
-
-
-    
     
     <div id="greeting" class="container">
         <div class="row">
@@ -53,7 +52,11 @@
         </div>
     </div>
     
-<!-- About Section -->
+    <!-- ************************************************** -->
+    <!-- ***************** ABOUT SECTION ****************** -->
+    <!-- ************************************************** -->    
+
+
     <div id="about">
         <div class="container-fluid">
             <div class="row">
@@ -61,57 +64,97 @@
                 <div class="col-11"></div>
             </div>
             <div class="row">
-                    <!-- <div class="col-1"></div> -->
-                    <section class="col-md-8">
-                        <!-- <p> -->
-                            WORKS? Inspired by the complexity and spontaneity of generative music-making software, I was quickly drawn into the world of computer programming.
-                            <br><br>
-                            I’ve since found so much to engage with as a programmer outside of my musical interests. Web development/design, in particular, is a skill set that allows me to continuously flex my curiosity while offering the opportunity to adapt my knowledge base to a wide variety of industries.
-                            <!-- </p> -->
-                        </section>
-                        
-                        <!-- <div class="col-1"></div> -->
-                        <div class="col-md-4 text-center">
-                            <img src="./images/shape.png"/>
-                        </div>
-
+                <section class="col-md-8">
+                    Inspired by the complexity and spontaneity of generative music-making software, I was quickly drawn into the world of computer programming.
+                    <br><br>
+                    I’ve since found so much to engage with as a programmer outside of my musical interests. Web development/design, in particular, is a skill set that allows me to continuously flex my curiosity while offering the opportunity to adapt my knowledge base to a wide variety of industries.
+                </section>
+                <div class="col-md-4 text-center">
+                    <img src="./images/shape.png"/>
+                </div>
             </div>
         </div>
     </div>
 
 
 
-<!-- Projects Section -->
+    <!-- ************************************************** -->
+    <!-- **************** PROJECTS SECTION **************** -->
+    <!-- ************************************************** -->
 
     <div id="projects">
-
-
 
         <h2>Projects</h2>
 
             <!-- FIRST PROJECT -->
-        <div id="project-sit">
-            <section class="project-descriptions">
-                <h3>Sit</h3>
-                <p>
-                    ‘Sit’ is a simple, user-friendly meditation timer. It works as a traditional countdown timer, with the option to add brief ‘interval’ alarms/reminders at timed spaces throughout the session. These serve as reminders to focus on the object of meditation.
-                </p>    
-            </section>
-            <img src="./images/sit-screenshot.png"/>
-        </div>    
+            <div id="project-sit">
+                <section class="project-descriptions">
+                    <h3>Sit</h3>
+                    <p>
+                        ‘Sit’ is a simple, user-friendly meditation timer. It works as a traditional countdown timer, with the option to add brief ‘interval’ alarms/reminders at timed spaces throughout the session. These serve as reminders to focus on the object of meditation.
+                    </p>    
+                </section>
+                <div data-toggle="modal" data-target=".sit-case-study-modal">
+                    <img class="project-screenshot" src="./images/sit-screenshot.png"/>
+                    <a>Learn more...</a>
+                </div>
+            </div>
 
+        <!-- SIT CASE STUDY -->
+
+        <div class="modal fade sit-case-study-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-full">
+            <div class="modal-content container" id="sit-case-study">
+
+                <h3 class="text-center">Sit</h3>
+                <p>
+                    The idea for ‘Sit’ arose upon noticing an apparent lack of simple, free, mobile-friendly, web-based mindfulness meditation timing apps designed with user experience in mind. Those that do exist tended to be clunky and awash in a “new-age” aesthetic that seemed off-putting to the average user.
+
+                    My intention was to fill this gap with a tool that was neutral in appearance and immediately navigable to users with little, if any, tech experience.
+                </p> 
+
+                <p>
+                    User research (email surveys to regular meditators in the Nashville community) suggested that simplicity and mobility were indeed top priorities. There was a general sense that subscription-based meditation apps had too much on offer (ie social connectivity and course offerings that distracted from the practice itself).
+                </p> 
+            </div>
+        </div>
+        </div>
 
 
             <!-- SECOND PROJECT -->
-        <div id="project-unknown">    
-            <section class="project-descriptions">
-                <h3>In progress...</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-            </section>
-            <img src="./images/shape.png"/>
-        </div>    
+            <div id="project-unknown">    
+                <section class="project-descriptions">
+                    <h3>Spin</h3>
+                    <p>
+                        'Spin' brings the utility of digital DJ software to vinyl DJs in an easily accessible format. Designed to make DJs' record crates more easily navigable during live sets.
+                    </p>
+                </section>
+
+                <div data-toggle="modal" data-target=".spin-case-study-modal">
+                    <img id="spin-screenshot" src="./images/spin.png"/>
+                    <a>Learn more...</a>
+                </div>
+            </div>
+
+
+
+            <div class="modal fade spin-case-study-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-full">
+                        <div class="modal-content container" id="spin-case-study">
+            
+                            <h3 class="text-center">Spin</h3>
+                            <p>
+                                The idea for ‘Sit’ arose upon noticing an apparent lack of simple, free, mobile-friendly, web-based mindfulness meditation timing apps designed with user experience in mind. Those that do exist tended to be clunky and awash in a “new-age” aesthetic that seemed off-putting to the average user.
+            
+                                My intention was to fill this gap with a tool that was neutral in appearance and immediately navigable to users with little, if any, tech experience.
+                            </p> 
+            
+                            <p>
+                                User research (email surveys to regular meditators in the Nashville community) suggested that simplicity and mobility were indeed top priorities. There was a general sense that subscription-based meditation apps had too much on offer (ie social connectivity and course offerings that distracted from the practice itself).
+                            </p> 
+                        </div>
+                    </div>
+                    </div>
 
 
 
@@ -121,17 +164,18 @@
 
 
 
-<!-- Blog Section -->
+    <!-- ************************************************** -->
+    <!-- ****************** BLOG SECTION ****************** -->
+    <!-- ************************************************** -->
 
 <div id="blog">
-
     <p>Blog entries incoming...</p>
-
 </div>
 
 
-
-<!-- Contact Section -->
+    <!-- ************************************************** -->
+    <!-- ***************** CONTACT SECTION **************** -->
+    <!-- ************************************************** -->
 
 <div id="contact">
 
@@ -140,7 +184,7 @@
     <ul>
         <li><a href="#"><img src="images/mail.png"/></a></li>
         <li><a href="https://www.linkedin.com/in/jeremy-bennett-52079a44/"><img src="images/linkedin-icon.png"/></a></li>
-        <li><a href="https://twitter.com/5AURu5"><img src="images/twitter.svg"/></a></li>
+        <li><a href="https://twitter.com/jlukebennett"><img src="images/twitter.svg"/></a></li>
         <li><a href="https://www.instagram.com/jjjjjjjjeremy/"><img src="images/instagram.png"/></a></li>
     </ul>
 
@@ -150,6 +194,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="dist/app.js"></script>
-    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
 </body>
 </html>
