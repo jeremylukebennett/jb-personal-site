@@ -42,6 +42,12 @@ nav#mainNav {
         color: #E0454A;
     }
 
+    a:hover {
+        text-decoration: none;
+        color: rgb(255, 182, 185);
+        transition-duration: 0.2s;
+    }
+
     a:visited {
     color: #E0454A;
     text-decoration: none;
@@ -68,6 +74,7 @@ ul#nav-bar-menu {
     text-align: end;
 
 
+
     a {
         text-decoration: none;
         color: #E0454A;
@@ -79,8 +86,9 @@ ul#nav-bar-menu {
 }
 
 
-
-// Greeting Sections Styles
+// ***********************************************************
+// ******************GREETING SECTION STYLES******************
+// ***********************************************************
 
 #greeting {
     background-color: #292929 !important;
@@ -92,57 +100,95 @@ ul#nav-bar-menu {
     color: white;
     font-size: 4em;
     margin-top: -0.1em;
-    padding: 4em 0 0 1em;
+    padding: 4em 0 0 0em;
 }
 
 
-
-// About Section Styles
+// ***********************************************************
+// ******************ABOUT SECTION STYLES*********************
+// ***********************************************************
 #about {
     background-color: #E0454A;
     color: black;
-    height: 58em;
+    height: 38em;
 
     h2 {
         font-family: $font-stack;
         font-weight: 200;
         font-size: 3em;
-        padding-top: 2em;
-
+        padding-top: 1em;
     }
 
     section {    
         width: 19em;
-        padding: 8em 0 0 0;
+        padding: 2em 0 0 0;
         font-size: 1.6em;
         margin-bottom: -11em;
     }
 
     img {
-        padding-top: 21em;
+        padding-top: 11em;
+        padding-left: 2em;
     }
 }
 
 
 
-// Projects Section Styles
+
+
+// ***********************************************************
+// ******************PROJECT SECTION STYLES*******************
+// ***********************************************************
 
 #projects {    
     background-color: white;
-    // margin: 0 -1.5em 0 -1.5em;
     height: 66em;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 
     h2 {
-        // @extend %section-header-title;
         font-family: $font-stack;
         font-weight: 200;
         font-size: 3em;
         padding-left: 1em;
     }
+
+    img {
+        display: inherit;
+    } 
 }
+
+//     .modal-dialog {
+//         width: 100%;
+//         height: 100%;
+//         margin: 0;
+//         padding: 0;
+//     }
+  
+//   .modal-content {
+//     height: auto;
+//     min-height: 100%;
+//     border-radius: 0;
+//   }
+
+// .full-screen {
+//     width: 100%;
+//     height: 100%;
+//     margin: 0;
+//     top: 0;
+//     left: 0;
+// }
+
+.modal-full {
+    min-width: 100%;
+    margin: 0;
+}
+
+.modal-full .modal-content {
+    min-height: 80vh;
+}
+
 
 #project-sit, #project-unknown {
     
@@ -166,13 +212,27 @@ ul#nav-bar-menu {
 
     img {
         align-self: center;
+        box-shadow: -1px -1px 0px 0px #ccc;
     }
 }
 
+#sit-case-study {
+    background-color: #CEE8FB;
+}
+
+#spin-screenshot {
+    width: 12.3em;
+}
+
+#spin-case-study{
+    background-color: #2F3855;
+    color: #02D4F5;
+}
 
 
-
-// Blog Section Styles
+// ***********************************************************
+// ******************BLOG SECTION STYLES**********************
+// ***********************************************************
 
 
 #blog {
@@ -189,13 +249,14 @@ ul#nav-bar-menu {
         padding-top: 9em;
         
     }
-
 }
 
-// Contact Section Styles
+// ***********************************************************
+// ******************CONTACT SECTION STYLES*******************
+// ***********************************************************
 
 #contact {
-    height: 16.7em;
+    height: 15.3em;
     color: white;
     font-size: 3em;
     font-weight: 200;
@@ -206,6 +267,7 @@ ul#nav-bar-menu {
         
         display: inline-flex;
         list-style-type: none;
+        flex-wrap: wrap;
         
         li {
             padding: 1em;
@@ -235,20 +297,136 @@ p#prompt {
 //     padding: 154px 0 100px;
 //   }
   
-  @media (min-width: 992px) {
-    header {
-      padding: 156px 0 100px;
-    }
-  }
-  
-
-//   nav#mainNav {
-
-
-
-// }
-
-//   section {
-//     padding: 150px 0;
+//   @media (min-width: 992px) {
+//     header {
+//       padding: 156px 0 100px;
+//     }
 //   }
   
+
+
+//  Breakpoints
+  /* Extra small devices (phones, 375px and down) */
+@media only screen and (max-width: 375px) {
+    // settings go here
+
+    
+} 
+
+
+// @media only screen and (min-width: 425px) {
+//     #about {
+//         height: 53em;
+
+//         img {
+//             padding-top: 19em;
+//             padding-left: 0em;
+//         }
+//     }
+// }
+
+/* Extra small devices (phones, 425px and down) */
+@media only screen and (max-width: 425px) {
+    // settings go here
+    
+    #greeting {
+        height: 29em;
+    }
+
+    #greeting-text {
+        font-size: 2em !important;
+        padding: 4em 0 0 0.5em !important;
+        height: 37em;
+        // border: solid black 2px;
+    }
+
+    #about {
+        height: 50em;   
+
+        h2 {
+            padding-top: 1em;
+        }
+
+        section{
+            font-size: 1.2em !important;
+            // border: solid black 2px;
+            padding: 0 0;
+            margin: auto;
+        }
+        
+        img{
+            padding: 0em;
+            margin-left: 1em;            
+            margin-top: 4em;
+        }
+
+
+    }
+
+    // #about section{
+    //     font-size: 1.2em !important;
+    //     // border: solid black 2px;
+    //     padding: 0 0;
+    //     margin: auto;
+    // }
+
+    // #about img{
+    //     padding: 0em;
+    //     margin-left: 25%;
+    //     margin-top: 4em;
+    // }
+
+
+    #contact img {
+        width: 1.5em;
+    }
+
+} 
+
+@media only screen and (max-width: 600px) {
+    // settings go here
+    
+
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    // settings go here
+} 
+
+/* Medium devices (landscape tablets, 768px and below) */
+@media only screen and (max-width: 768px) {
+    // settings go here
+    #greeting-text {
+        color: white;
+        font-size: 4em;
+        margin-top: -0.1em;
+        padding: 4em 0 0 1em;
+        width: 10em;
+    }
+
+} 
+/* Medium devices (landscape tablets, 768px and below) */
+@media only screen and (max-width: 768px) {
+    // settings go here
+    #greeting-text {
+        color: white;
+        font-size: 4em;
+        margin-top: -0.1em;
+        padding: 4em 0 0 1em;
+        width: 10em;
+    }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    // settings go here
+    header {
+        padding: 156px 0 100px;
+      }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    // settings go here
+}

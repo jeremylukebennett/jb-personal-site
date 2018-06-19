@@ -20,6 +20,10 @@ nav#mainNav {
   nav#mainNav a {
     text-decoration: none;
     color: #E0454A; }
+  nav#mainNav a:hover {
+    text-decoration: none;
+    color: #ffb6b9;
+    transition-duration: 0.2s; }
   nav#mainNav a:visited {
     color: #E0454A;
     text-decoration: none; }
@@ -52,24 +56,25 @@ ul#nav-bar-menu {
   color: white;
   font-size: 4em;
   margin-top: -0.1em;
-  padding: 4em 0 0 1em; }
+  padding: 4em 0 0 0em; }
 
 #about {
   background-color: #E0454A;
   color: black;
-  height: 58em; }
+  height: 38em; }
   #about h2 {
     font-family: "Mada", sans-serif;
     font-weight: 200;
     font-size: 3em;
-    padding-top: 2em; }
+    padding-top: 1em; }
   #about section {
     width: 19em;
-    padding: 8em 0 0 0;
+    padding: 2em 0 0 0;
     font-size: 1.6em;
     margin-bottom: -11em; }
   #about img {
-    padding-top: 21em; }
+    padding-top: 11em;
+    padding-left: 2em; }
 
 #projects {
   background-color: white;
@@ -82,6 +87,15 @@ ul#nav-bar-menu {
     font-weight: 200;
     font-size: 3em;
     padding-left: 1em; }
+  #projects img {
+    display: inherit; }
+
+.modal-full {
+  min-width: 100%;
+  margin: 0; }
+
+.modal-full .modal-content {
+  min-height: 80vh; }
 
 #project-sit, #project-unknown {
   display: flex;
@@ -96,7 +110,18 @@ ul#nav-bar-menu {
     #project-sit section p, #project-unknown section p {
       font-size: 1.5em; }
   #project-sit img, #project-unknown img {
-    align-self: center; }
+    align-self: center;
+    box-shadow: -1px -1px 0px 0px #ccc; }
+
+#sit-case-study {
+  background-color: #CEE8FB; }
+
+#spin-screenshot {
+  width: 12.3em; }
+
+#spin-case-study {
+  background-color: #2F3855;
+  color: #02D4F5; }
 
 #blog {
   background-color: #E0454A;
@@ -108,14 +133,15 @@ ul#nav-bar-menu {
     padding-top: 9em; }
 
 #contact {
-  height: 16.7em;
+  height: 15.3em;
   color: white;
   font-size: 3em;
   font-weight: 200;
   text-align: center; }
   #contact ul {
     display: inline-flex;
-    list-style-type: none; }
+    list-style-type: none;
+    flex-wrap: wrap; }
     #contact ul li {
       padding: 1em; }
   #contact img {
@@ -129,8 +155,53 @@ p#prompt {
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
  */
-@media (min-width: 992px) {
+/* Extra small devices (phones, 375px and down) */
+/* Extra small devices (phones, 425px and down) */
+@media only screen and (max-width: 425px) {
+  #greeting {
+    height: 29em; }
+
+  #greeting-text {
+    font-size: 2em !important;
+    padding: 4em 0 0 0.5em !important;
+    height: 37em; }
+
+  #about {
+    height: 50em; }
+    #about h2 {
+      padding-top: 1em; }
+    #about section {
+      font-size: 1.2em !important;
+      padding: 0 0;
+      margin: auto; }
+    #about img {
+      padding: 0em;
+      margin-left: 1em;
+      margin-top: 4em; }
+
+  #contact img {
+    width: 1.5em; } }
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and below) */
+@media only screen and (max-width: 768px) {
+  #greeting-text {
+    color: white;
+    font-size: 4em;
+    margin-top: -0.1em;
+    padding: 4em 0 0 1em;
+    width: 10em; } }
+/* Medium devices (landscape tablets, 768px and below) */
+@media only screen and (max-width: 768px) {
+  #greeting-text {
+    color: white;
+    font-size: 4em;
+    margin-top: -0.1em;
+    padding: 4em 0 0 1em;
+    width: 10em; } }
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
   header {
     padding: 156px 0 100px; } }
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 
 /*# sourceMappingURL=main.css.map */

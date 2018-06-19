@@ -1,9 +1,16 @@
 "use strict";
 
 console.log("testing js");
-require('./scrollLinks');
-require('./scrollingNav');
-let $ = require('jquery');
+// Dependencies
+// let $ = require('jquery');
+// window.jQuery = ('jquery');
+// let bootstrap = require('../lib/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js');
+
+
+// JavaScript files
+// require('./scrollLinks');
+// require('./scrollingNav');
+
 
 // $("section").hide();
 
