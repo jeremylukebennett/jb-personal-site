@@ -71,7 +71,8 @@ ul#nav-bar-menu {
     width: 19em;
     padding: 2em 0 0 0;
     font-size: 1.6em;
-    margin-bottom: -11em; }
+    margin-bottom: -11em;
+    margin-left: 2em; }
   #about img {
     padding-top: 11em;
     padding-left: 2em; }
@@ -90,6 +91,10 @@ ul#nav-bar-menu {
   #projects img {
     display: inherit; }
 
+.project-screenshot {
+  width: 24em;
+  margin: 0em -7em 0em -8em; }
+
 .modal-full {
   min-width: 100%;
   margin: 0; }
@@ -99,7 +104,8 @@ ul#nav-bar-menu {
 
 #project-sit, #project-unknown {
   display: flex;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  font-weight: 200; }
   #project-sit section, #project-unknown section {
     color: black;
     align-self: center;
@@ -110,18 +116,33 @@ ul#nav-bar-menu {
     #project-sit section p, #project-unknown section p {
       font-size: 1.5em; }
   #project-sit img, #project-unknown img {
-    align-self: center;
-    box-shadow: -1px -1px 0px 0px #ccc; }
+    align-self: center; }
+
+.challenge-statement {
+  font-weight: 300; }
+
+.sit-title {
+  font-size: 4em; }
 
 #sit-case-study {
   background-color: #CEE8FB; }
+  #sit-case-study h3 {
+    font-weight: 200; }
+
+#picker {
+  height: 11em;
+  margin: auto; }
 
 #spin-screenshot {
-  width: 12.3em; }
+  width: 24em;
+  margin: 0em -7em 0em -8em; }
 
 #spin-case-study {
   background-color: #2F3855;
   color: #02D4F5; }
+
+.learn-more-screenshots {
+  margin-top: 1em; }
 
 #blog {
   background-color: #E0454A;
