@@ -118,6 +118,9 @@ ul#nav-bar-menu {
   #project-sit img, #project-unknown img {
     align-self: center; }
 
+.challenge-statement {
+  font-weight: 300; }
+
 .sit-title {
   font-size: 4em; }
 
@@ -125,6 +128,10 @@ ul#nav-bar-menu {
   background-color: #CEE8FB; }
   #sit-case-study h3 {
     font-weight: 200; }
+
+#picker {
+  height: 11em;
+  margin: auto; }
 
 #spin-screenshot {
   width: 24em;

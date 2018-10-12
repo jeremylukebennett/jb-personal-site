@@ -197,9 +197,12 @@ ul#nav-bar-menu {
 
     img {
         align-self: center;
-        // box-shadow: -1px -1px 0px 0px #ccc;
     }
+
 }
+        .challenge-statement {
+            font-weight: 300;
+        }
 
 .sit-title {
     font-size: 4em;
@@ -211,6 +214,11 @@ ul#nav-bar-menu {
     h3 {
         font-weight: 200;
     }
+}
+
+#picker {
+    height: 11em;
+    margin: auto;
 }
 
 #spin-screenshot {
