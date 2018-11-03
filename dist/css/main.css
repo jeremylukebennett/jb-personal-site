@@ -129,6 +129,13 @@ ul#nav-bar-menu {
   #sit-case-study h3 {
     font-weight: 200; }
 
+#spin-case-study h3 {
+  font-weight: 200; }
+
+#enter-spin {
+  font-weight: 200;
+  margin-bottom: -1.6em; }
+
 #picker {
   height: 11em;
   margin: auto; }
