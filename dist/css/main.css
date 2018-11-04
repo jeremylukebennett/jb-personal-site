@@ -13,8 +13,7 @@ header {
   padding: 2em 0 0 0; }
 
 nav#mainNav {
-  background-color: #292929 !important;
-  color: #E0454A !important; }
+  background-color: #292929 !important; }
   nav#mainNav #name-title {
     font-size: 2em; }
   nav#mainNav a {
@@ -24,9 +23,6 @@ nav#mainNav {
     text-decoration: none;
     color: #ffb6b9;
     transition-duration: 0.2s; }
-  nav#mainNav a:visited {
-    color: #E0454A;
-    text-decoration: none; }
 
 .menu-item {
   display: inline; }
