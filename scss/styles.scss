@@ -30,7 +30,6 @@ header {
 nav#mainNav {
     
     background-color: #292929 !important;
-    // color: #E0454A !important;
 
     #name-title {
         font-size: 2em;
@@ -212,7 +211,7 @@ ul#nav-bar-menu {
 
 #spin-case-study h3{
 
-        font-weight: 200;
+    font-weight: 200;
 }
 
 #enter-spin {
@@ -220,9 +219,15 @@ ul#nav-bar-menu {
     margin-bottom: -1.6em;
 }
 
-#picker {
+.case-study-imgs {
     height: 11em;
     margin: auto;
+}
+
+.phone-screenshots {
+    height: 30em;
+    width: 15em;
+    margin-left: 39%;
 }
 
 #spin-screenshot {
@@ -239,6 +244,11 @@ ul#nav-bar-menu {
 
 .learn-more-screenshots {
     margin-top: 1em;
+    cursor: pointer;
+
+    a {
+        cursor: pointer;
+    }
 }
 
 // ***********************************************************

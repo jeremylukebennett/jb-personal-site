@@ -132,9 +132,14 @@ ul#nav-bar-menu {
   font-weight: 200;
   margin-bottom: -1.6em; }
 
-#picker {
+.case-study-imgs {
   height: 11em;
   margin: auto; }
+
+.phone-screenshots {
+  height: 30em;
+  width: 15em;
+  margin-left: 39%; }
 
 #spin-screenshot {
   width: 24em;
@@ -145,7 +150,10 @@ ul#nav-bar-menu {
   color: #02D4F5; }
 
 .learn-more-screenshots {
-  margin-top: 1em; }
+  margin-top: 1em;
+  cursor: pointer; }
+  .learn-more-screenshots a {
+    cursor: pointer; }
 
 #blog {
   background-color: #E0454A;
