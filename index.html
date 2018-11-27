@@ -12,9 +12,9 @@
 <body>
 
 
-    <!-- ************************************************** -->
+    <!-- ================================================== -->
     <!-- ****************** NAVIGATION ******************** -->
-    <!-- ************************************************** -->    
+    <!-- ================================================== -->
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
         <div class="container">
@@ -55,9 +55,9 @@
         </div>
     </div>
     
-    <!-- ************************************************** -->
+    <!-- ================================================== -->
     <!-- ***************** ABOUT SECTION ****************** -->
-    <!-- ************************************************** -->    
+    <!-- ================================================== -->
 
 
     <div id="about">
@@ -81,9 +81,9 @@
 
 
 
-    <!-- ************************************************** -->
+    <!-- ================================================== -->
     <!-- **************** PROJECTS SECTION **************** -->
-    <!-- ************************************************** -->
+    <!-- ================================================== -->
 
     <div id="projects">
 
@@ -110,7 +110,7 @@
 
                 <h3 class="text-center sit-title">Sit</h3>
                 <p>
-                    The idea for ‘Sit’ arose after noticing an apparent lack of simple, free, mobile-friendly, web-based mindfulness meditation timing apps designed with user experience in mind. Those that do exist tended to be clunky and awash in a “new-age” aesthetic that seemed off-putting to the average user.
+                    The idea for ‘Sit’ arose after noticing a lack of simple, free, mobile-friendly, web-based mindfulness meditation timing apps designed with user experience in mind. Those that do exist tend to be dated in aesthetic, and ultiately less appealing to the average user.
                     
                     My intention was to fill this gap with a tool that was neutral in tone and navigable for users of all backgrounds.
                 </p> 
@@ -119,11 +119,12 @@
 
                 <h3>User Research</h3>
                 <p>
-                    I surveyed members of Nashville’s meditation community to get a sense of their typical practice, and which, if any, app based meditation tools they use. Those that use an app reported a strong preference for simplicity and mobility. Some felt that the paid, subscription based nature of many popular meditation apps was a barrier to using them, and others felt that these tools were bloated with lessons, interviews, notifications and other distractions. That said, many still expressed interest in a tool that could track a user’s personal progress over time. The idea of a web-based tool instead of a downloadable app seemed largely appealing to respondants, too. <br/><br/>
+                    A survey of local meditators in the Nashville community indicated a strong preference for simplicity and mobility in a meditation tool. Many felt that the paid, subscription based nature of many popular meditation apps was a barrier to use. Others indicated overwhelmed by the breadth of courses, interviews, notifications and other distractions available in these apps. That said, many expressed interest in a tool that could track a user’s personal progress over time. Emphasis on a web-based tool, as opposed to a downloadable app, struck a positive chord with those surveyed. <br/><br/>
 
-                    Finally, some non-meditators I spoke with reported a subtle aversion to the practice, citing the “new-agey” aesthetic that so commonly comes baggage with any “spiritual” endeavor. <br/><br/>
+                    Some non-meditators I spoke with reported a subtle aversion to the practice generally, citing “new age” associations.
+                    <br/><br/>
                     
-                    With these concerns in mind, I was able to more clearly articulate the challenge that laid ahead: <br/><br/>
+                    With these concerns in mind, I was able to more clearly articulate the challenge ahead: <br/><br/>
                     
                     <span class="challenge-statement" style="font-weight: 400;">How could I offer a simple, functional, web-based meditation timing tool that allowed users of all backgrounds to track their progress over time?</span> <br/><br/>
                 </p> 
@@ -136,10 +137,16 @@
                     <br>
                     The sliders on the main page could be reconfigured into pickers (scrollable wheels). This would give the user a broader range of options to choose from. In its current form, the number of options is fixed. The sliders are also generally less responsive on touch-screen devices.
 
-                    <img id="picker" src="./images/picker_example.png"/>
+                    <img class="case-study-imgs" src="./images/picker_example.png"/>
                     <br>
                     <br>
-                    The progress tracking page would benefit from a visual representation of the user’s data, perhaps as a linear graph. This way total progress could be gauged in a single glance. The current ’list’ format is workable, but cumbersome. Additionally, the ‘Back’ button should remain in view at all times. Currently it scrolls out of view when the number of data entries exceeds the size of the screen.
+                    The progress tracking page would benefit from a visual representation of the user’s data, perhaps as a linear graph. This way total progress could be gauged in a single glance. The current ’list’ format is workable, but cumbersome. 
+                    <br>
+                    <br>
+                    <img class="case-study-imgs" src="./images/sit_progress.png"/>
+                    <br>
+                    <br>
+                    Additionally, the ‘Back’ button should remain in view at all times. Currently it scrolls out of view when the number of data entries exceeds the size of the screen.
                 </p>
 
                 <hr/>
@@ -148,61 +155,85 @@
         </div>
 
 
-            <!-- SECOND PROJECT -->
-            <div id="project-unknown">    
-                <section class="project-descriptions">
-                    <h3>Spin</h3>
-                    <p>
-                        'Spin' brings the utility of digital DJ software to vinyl DJs in an easily accessible format. Designed to make DJs' record crates more easily navigable during live sets.
-                    </p>
-                </section>
+        <!-- SPIN CASE STUDY -->
+        <div id="project-unknown">    
+            <section class="project-descriptions">
+                <h3>Spin</h3>
+                <p>
+                    'Spin' brings the utility of digital DJ software to vinyl DJs in an easily accessible format. Designed to make DJs' record crates more easily navigable during live sets.
+                </p>
+            </section>
 
-                <div data-toggle="modal" data-target=".spin-case-study-modal" class="learn-more-screenshots">
-                    <img class="project-screenshot" id="spin-screenshot" src="./images/spin_iphonexspacegrey_portrait.png"/>
-                    <a>Learn more...</a>
+            <div data-toggle="modal" data-target=".spin-case-study-modal" class="learn-more-screenshots">
+                <img class="project-screenshot" id="spin-screenshot" src="./images/spin_iphonexspacegrey_portrait.png"/>
+                <a>Learn more...</a>
+            </div>
+        </div>
+
+
+        <div class="modal fade spin-case-study-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-full">
+                <div class="modal-content container" id="spin-case-study">
+    
+                    <h3 class="text-center sit-title">Spin</h3>
+                    <p>
+                        DJs have grown in popularity in recent decades, and despite the digital revolution many still prefer to spin vinyl records. Setting aside the perennial ‘digital vs. analog’ debate, there is one obvious advantage that digital DJs benefit from: sorting. Laptop DJs can sort their collections by tempo, genre, title or any other metric with the click of a button. If only crates of vinyl would be so accommodating. 
+                        <br>
+                        <br>
+                        <h4 class="text-center" id="enter-spin">Enter ‘Spin’</h4>
+                        <br>
+                        <br>
+                        ‘Spin’ is a live reference and cataloging tool for vinyl DJs to use while they perform. It allows users to enter their record collections and sort through them immediately, as opposed to flipping through their record crates, one by one, in search of the perfect track.
+                    </p> 
+                    
+                    <hr/>
+                    
+                    <h3>User research</h3> 
+                    <p>
+                        I conducted phone interviews with Nashville-based vinyl DJs asking them about their current organization processes, and how they prioritize records in their collections while they perform. I was interested in understanding which elements of the selection process were the most salient in their minds as they flipped through records. 
+                        <br>
+                        <br>
+                        I asked about practical challenges that they have as DJs and got a variety of interesting responses. A few interviewees wished there was a way to hear a record before pulling it out of the sleeve and loading it on the turntable. Others mentioned wanting an integrated tempo calculator. The ability to read key details of a given track was also a priority (i.e. Track picks up speed near the middle; Track has a happy/vibrant mood).
+                        At this point my goal had begun to reveal itself:
+                    </p>
+
+                    
+                    <span class="challenge-statement" style="font-weight: 400;">
+                        How might I help DJs select and preview records quickly, efficiently and without having to rely exclusively on memory or static organizational methods.
+                    </span>
+                    
+                    <br>
+                    <br>
+                    
+                    <h3>Future Versions</h3> 
+
+                    <p>
+                        ‘Spin’ has quite a lot of potential. It was necessary for the baseline version to offer users the core ability to add and reference records from their library, but the method of input could be streamlined dramatically. Spotify’s robust API would give users access to all of the metadata they would need when selecting records. Allowing the search function to auto-complete relative to the data within Spotify’s API would be a substantial time-saver (the decision to start with a manual entry system stems from the fact that many DJs play records that aren’t in Spotify’s database. Manual entry, though cumbersome, would be the most comprehensive).
+                    </p>
+                    
+                    <img class="phone-screenshots" src="./images/future-spin-screen.png"/>
+
                 </div>
             </div>
-
-
-
-            <div class="modal fade spin-case-study-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg modal-full">
-                        <div class="modal-content container" id="spin-case-study">
-            
-                            <h3 class="text-center">Spin</h3>
-                            <p>
-                                The idea for ‘Sit’ arose upon noticing an apparent lack of simple, free, mobile-friendly, web-based mindfulness meditation timing apps designed with user experience in mind. Those that do exist tended to be clunky and awash in a “new-age” aesthetic that seemed off-putting to the average user.
-            
-                                My intention was to fill this gap with a tool that was neutral in appearance and immediately navigable to users with little, if any, tech experience.
-                            </p> 
-            
-                            <p>
-                                User research (email surveys to regular meditators in the Nashville community) suggested that simplicity and mobility were indeed top priorities. There was a general sense that subscription-based meditation apps had too much on offer (ie social connectivity and course offerings that distracted from the practice itself).
-                            </p> 
-                        </div>
-                    </div>
-                    </div>
-
-
-
+        </div>
     </div>
 
 
 
 
 
-    <!-- ************************************************** -->
-    <!-- ****************** BLOG SECTION ****************** -->
-    <!-- ************************************************** -->
+    <!-- ================================================== -->
+    <!-- ------------------ BLOG SECTION ------------------ -->
+    <!-- ================================================== -->
 
 <div id="blog">
     <p>Blog entries incoming...</p>
 </div>
 
 
-    <!-- ************************************************** -->
-    <!-- ***************** CONTACT SECTION **************** -->
-    <!-- ************************************************** -->
+    <!-- ================================================== -->
+    <!-- ----------------- CONTACT SECTION ----------------- -->
+    <!-- ================================================== -->
 
 <div id="contact">
 

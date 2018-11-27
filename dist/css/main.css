@@ -13,8 +13,7 @@ header {
   padding: 2em 0 0 0; }
 
 nav#mainNav {
-  background-color: #292929 !important;
-  color: #E0454A !important; }
+  background-color: #292929 !important; }
   nav#mainNav #name-title {
     font-size: 2em; }
   nav#mainNav a {
@@ -24,9 +23,6 @@ nav#mainNav {
     text-decoration: none;
     color: #ffb6b9;
     transition-duration: 0.2s; }
-  nav#mainNav a:visited {
-    color: #E0454A;
-    text-decoration: none; }
 
 .menu-item {
   display: inline; }
@@ -129,9 +125,21 @@ ul#nav-bar-menu {
   #sit-case-study h3 {
     font-weight: 200; }
 
-#picker {
+#spin-case-study h3 {
+  font-weight: 200; }
+
+#enter-spin {
+  font-weight: 200;
+  margin-bottom: -1.6em; }
+
+.case-study-imgs {
   height: 11em;
   margin: auto; }
+
+.phone-screenshots {
+  height: 30em;
+  width: 15em;
+  margin-left: 39%; }
 
 #spin-screenshot {
   width: 24em;
@@ -142,7 +150,10 @@ ul#nav-bar-menu {
   color: #02D4F5; }
 
 .learn-more-screenshots {
-  margin-top: 1em; }
+  margin-top: 1em;
+  cursor: pointer; }
+  .learn-more-screenshots a {
+    cursor: pointer; }
 
 #blog {
   background-color: #E0454A;
